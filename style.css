@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #F0EDE8;
+    background-color: #fffaed;
   }
 
 .container{
@@ -10,7 +10,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    background-color: #C1CBD7;
+    background-color: #c5d9e8;
   }
   
 .topnav a {
@@ -70,7 +70,7 @@ h1{
 
 .wrapper {
     display: grid;
-    grid-template-columns: 288px 200px 375px 325px;
+    grid-template-columns: 288px 200px 288px 268px;
     margin-top: 3em;
     font-size: 13px;
   }
@@ -84,7 +84,7 @@ h1{
 
   .wrapper3 {
     display: grid;
-    grid-template-columns: 288px 270px 425px 365px;
+    grid-template-columns: 288px 270px 288px 268px;
     text-align: left;
     margin-top: 1em;
     margin-left: 9em;
@@ -120,7 +120,7 @@ h1{
     display:block; 
     margin:auto;
     background-color: white;
-    border:5px #CCCCCC solid;
+    border:3px #CCCCCC solid;
     border-radius: 0.5em;
     color: black;
     padding: 15px 30px;
@@ -137,7 +137,7 @@ h1{
     display: flex;
     height: 100%;
     padding: 20px;
-    background-color: #F0EDE8;
+    background-color: #fffaed;
   }
   
 .item {
@@ -152,7 +152,7 @@ h1{
     display: flex;
     height: 100%;
     padding: 1em;
-    background-color: #F0EDE8;
+    background-color: #fffaed;
     margin-left: 6em;
     margin-right: 5.3em;
     margin-top: -1em;
@@ -165,7 +165,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #e8e1cc;
     font-size: 13pt;
   }
 
@@ -184,29 +184,30 @@ h1{
 .flex_3 {
     display: flex;
     height: 100%;
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
     background-color: white;
   }
   
 .item_3 {
     flex: 1;
-    margin: 3px;
+    margin: 0;
     display: flex;
     justify-content: left;
     align-items: left;
   }
 
 .item_4 {
-    flex: 1.05;
-    margin: 3px;
+    flex: 1;
+    margin: 0px;
     display: flex;
     padding: auto;
     align-items: left;
   }
 
 .item_5 {
-    flex: 2;
-    margin: 3px;
+    flex: 1;
+    margin: 0;
     display: flex;
     padding: auto;
     align-items: left;
@@ -214,7 +215,7 @@ h1{
 
 blockquote{
     border-left: 1px solid gray;;
-    margin: 15px 30px 0 10px;
+    margin: 5px 30px 5px 10px;
     padding-left: 20px;
    
 }
@@ -239,6 +240,49 @@ blockquote{
     border: #C5B9AC 3px solid;
     width: 10%;
 
+}
+
+.headshot{
+  margin-top: 4em;
+  margin-left: 7.5em;
+  float: left;
+}
+
+
+.mwt_border { 
+	width : 120px ; 
+	height : 0.5px ; 
+	text-align : left ; 
+	background : #fff ; 
+	position : relative ; 
+	border :  solid  1px  #333 ; 
+	padding : 30px ; 
+  margin-left: 15em;
+  margin-top: 1em;
+} 
+
+
+/*箭頭左*/ 
+.mwt_border .arrow_l_int { 
+	width : 0px ; 
+	height : 0px ; 
+	border-width : 15px ; 
+	border-style : solid ; 
+	border-color : transparent  #333  transparent   transparent  ; 
+	position : absolute ; 
+	top : 20% ; 
+	left : -30px ;
+} 
+/*箭頭左-邊框*/ 
+.mwt_border .arrow_l_out { 
+	width : 0px ; 
+	height : 0px ; 
+	border-width : 15px ; 
+	border-style : solid ; 
+	border-color : transparent  #fff  transparent  transparent  ; 
+	position : absolute ; 
+	top : 20% ; 
+	left : -29px ; 
 }
 
 /* table,tr,td{
@@ -274,10 +318,10 @@ blockquote{
 
 .confirm_frame{
   background-color: white;
-  border:5px #CCCCCC solid;
+  border:3px #CCCCCC solid;
   display:block; 
-  margin-left: 7em; 
-  margin-right: 6em; 
+  margin-left: 7.3em; 
+  margin-right: 6.5em; 
   margin-top: -2em; 
   border-radius: 0.5em;
   padding: 3em;

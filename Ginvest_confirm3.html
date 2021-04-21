@@ -27,23 +27,23 @@
         </div>
         <div></div>
         <div></div>
-        <img src="地球智能投資圖片/流程（右上角）/流程透明度 中-4.png" width="150%" style="margin-right: 10em;margin-top: -1.5em;">
+        <img src="永續智能投資圖片/流程（右上角）/流程透明度 中-4.png" width="150%" style="margin-right: 10em;margin-top: -1.5em;">
     </div>
 
-    <img src="地球智能投資圖片/robot_judy.png" style="float: left; z-index: -100; margin-top: 2em;" width="5%">
+    <img src="永續智能投資圖片/robot_judy.png" style="float: left; z-index: -100; margin-top: 2em;" width="5%">
 
     <div class="wrapper3">
-        <h1 style="text-align: left; color: #38566A; font-size: 18pt;">確認投資內容</h1>
+        <h1 style="color: #38566A; margin-bottom: 15px; font-size: 15pt;">確認投資內容</h1>
     </div>
 
     <form action="Ginvest_confirm_check3.html">
-        <div class="confirm_frame">
-            <p style="font-size: 13pt; color: #465765; margin-top: -1.5em; font-weight:bold;">確認本次目標為以下內容</p>
+        <div class="confirm_frame" style="margin-top: 0;">
+            <p style="font-size: 13pt; color: #465765; margin-top: -1em; font-weight:bold;">請輸入本次目標計劃於以下內容</p>
             <div class="flex_3">
                 <div class="item_3">
                     <!-- <form style="font-size: 13pt;"> -->
                     <blockquote>
-                        <p>名稱</p>
+                        <p style="font-weight: bold; margin-top: 0em;">名稱</p>
                         <input type="text" id="inputName" class="inputbox2" required>
                     </blockquote>
                     <!-- </form> -->
@@ -52,16 +52,16 @@
                 <div class="item_3">
                     <!-- <form style="font-size: 13pt;"> -->
                     <blockquote>
-                        <p>目標金額</p>
-                        <input type="text" id="inputMoney" class="inputbox2" required>元
+                        <p style="font-weight: bold; margin-top: 0em;">目標金額</p>
+                        <input type="text" id="inputMoney" class="inputbox2" required> 元
                     </blockquote>
                     <!-- </form> -->
                 </div>
                 <div class="item_3">
                     <!-- <form style="font-size: 13pt;"> -->
                     <blockquote>
-                        <p>預計投資年限</p>
-                        <input type="text" id="inputTime" class="inputbox2" required>年
+                        <p style="font-weight: bold; margin-top: 0em;">預計投資年限</p>
+                        <input type="text" id="inputTime" class="inputbox2" required> 年
                     </blockquote>
                     <!-- </form> -->
                 </div>
@@ -69,13 +69,13 @@
 
             <hr>
 
-            <p style="font-size: 13pt; color: #465765; margin-top: 1em; font-weight:bold;">請輸入本次申購資訊於以下內容</p>
+            <p style="font-size: 13pt; color: #465765; margin-top: 2em; font-weight:bold;">請輸入本次申購資訊於以下內容</p>
             <div class="flex_3">
                 <div class="item_3">
                     <!-- <form style="font-size: 13pt;"> -->
                     <blockquote>
-                        <p>投資方式</p>
-                        <input value='單筆投資' type="radio" name="erarbeiten">單筆投資<br>
+                        <p style="font-weight: bold; margin-top: 0em;">投資方式</p>
+                        <input value='單筆投資' type="radio" name="erarbeiten">單筆投資 &emsp;
                         <input value='定期定額' type="radio" name="erarbeiten">定期定額
                     </blockquote>
                     <!-- </form> -->
@@ -83,17 +83,19 @@
                 <div class="item_3">
                     <!-- <form style="font-size: 13pt;"> -->
                     <blockquote>
-                        <p>投資金額</p>
-                        <input type="text" id="inputiMoney" class="inputbox2" required>元
+                        <p style="font-weight: bold; margin-top: 0em;">投資金額</p>
+                        <input type="text" id="inputiMoney" class="inputbox2" required> 元
                     </blockquote>
                     <!-- </form> -->
                 </div>
                 <div class="item_3">
                     <!-- <form style="font-size: 13pt;"> -->
                     <blockquote>
-                        <p>停利停損通知點</p>
+                        <p style="font-weight: bold; margin-top: 0em;">停利停損通知點</p>
                         停利停損：±<input type="text" id="inputPercent" class="inputbox"
-                            onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="10" required>％
+                            onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="10" required
+                            style="width: 3em; margin-left: 1em; margin-top: -2.5em;">
+                        <p style="margin-left: 9em; margin-top: -1.5em;">%</p>
                     </blockquote>
                     <!-- </form> -->
                 </div>
@@ -103,7 +105,7 @@
                 <div class="item_4">
                     <!-- <form style="font-size: 13pt;"> -->
                     <blockquote>
-                        <p>個人風險屬性</p>
+                        <p style="font-weight: bold; margin-top: 0em;">個人風險屬性</p>
                         <p>成長型</p>
                     </blockquote>
                     <!-- </form> -->
@@ -111,7 +113,7 @@
                 <div class="item_4">
                     <!-- <form style="font-size: 13pt;"> -->
                     <blockquote>
-                        <p>扣款帳號</p>
+                        <p style="font-weight: bold; margin-top: 0em;">扣款帳號</p>
                         <select>
                             <option>000012345678【營業部永續活期儲蓄存款】－新台幣</option>
                         </select>
@@ -125,36 +127,54 @@
 
             <hr>
 
-            <p style="font-size: 13pt; color: #465765; margin-top: 1em; font-weight:bold;">請查看本次投資組合</p>
+            <p style="font-size: 13pt; color: #465765; margin-top: 2em; font-weight:bold;">請查看本次投資組合</p>
 
             <div class="flex_3">
                 <div class="item_3">
                     <!-- <form style="font-size: 13pt;"> -->
                     <blockquote>
-                        <p style="font-weight:bold;">投資方案</p>
+                        <p style="font-weight: bold; margin-top: 0em;">投資方案</p>
                         <p>永續3號</p>
                     </blockquote>
                     <!-- </form> -->
                 </div>
             </div>
 
-            <div class="flex_3">
-                <div class="item_3">
+            <div class="flex_3" style="margin-top: -20em;">
+                <div class="item_3" style="margin-bottom: 0em;">
                     <!-- <form style="font-size: 13pt;"> -->
                     <blockquote>
-                        <p style="font-weight:bold;">標的配置比重</p>
+                        <p style="font-weight:bold; margin-top: 0em;">標的配置比重</p>
                     </blockquote>
                     <!-- </form> -->
                 </div>
-                <div class="item_5">
-                    <!-- <form style="font-size: 13pt;"> -->
-                    <img src="地球智能投資圖片/10_3_投資下單.png" width="70%" height="85%"
-                        style="padding-left:-20px ; padding-top: 20px; margin-left: 1em;">
-                    <!-- </form> -->
-                </div>
-                <div class="flex_3">
-                    <div class="item_3">
-                    </div>
+                <div class="item_5" style="margin-bottom: 0em;">
+                    <table>
+                        <tr>
+                            <td>野村環球基金（累積）（新台幣）</td>
+                            <td>30.98%</td>
+                        </tr>
+                        <tr>
+                            <td>摩根大歐洲基金（累積）（新台幣）</td>
+                            <td>18.71%</td>
+                        </tr>
+                        <tr>
+                            <td>摩根新興日本基金（累積）（新台幣）</td>
+                            <td>13.51%</td>
+                        </tr>
+                        <tr>
+                            <td>保德信新興市場企業債券基金（累積）（新台幣）</td>
+                            <td>15.05%</td>
+                        </tr>
+                        <tr>
+                            <td>野村全球金融收益基金（累積）（新台幣）</td>
+                            <td>11.79%</td>
+                        </tr>
+                        <tr>
+                            <td>聯博全球高收益債券基金T2（累積）（新台幣）</td>
+                            <td>9.96%</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
