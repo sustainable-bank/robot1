@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type="text/css" href="style.css">
+    <title>永續智能投資</title>
+    <style>
+        .fix {
+            top: 0;
+            bottom: 0;
+            position: fixed;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            /* margin-top: 10em; */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="fix">
+
+        <div class="topnav">
+            <a href="#">基金/永續智能投資</a>
+            <a href="#">信用卡</a>
+            <a href="#">外幣/換匯</a>
+            <a href="#">臺幣/轉帳</a>
+            <div onclick="location.href='index.html'" style="cursor: pointer;">
+                <h3>永續銀行</h3>
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <div>
+                <h2 style="margin-left: 6em;margin-top: -1em;">永續智能投資</h2>
+            </div>
+            <div></div>
+            <div></div>
+            <img src="永續智能投資圖片/流程（右上角）/流程透明度 中-2.png" width="150%" style="margin-right: 10em;margin-top: -1.5em;">
+        </div>
+
+        <img src="永續智能投資圖片/robot_judy.png" style="float: left; z-index: -100; margin-top: 2em;" width="5%">
+
+        <h1 style="text-align: center; color: #38566A; margin-bottom: 15px;">設定投資目標</h1>
+
+        <form action="invest_solution.html">
+            <div style="display: block; margin-left: 6.7em; margin-right: 6.2em; margin-top:1em; background-color: white;border:3px #CCCCCC solid;
+    border-radius: 0.5em;color: black;font-size: 15px; height: 11em;">
+                <img src="永續智能投資圖片/4_設定投資目標/4_1.png"
+                    style="float: left; width: 18%;margin-left: 3em; margin-top: 1em; margin-right: 2em;">
+                <p style="margin-left: 24em; margin-top: 2em; font-size: 15px;">請針對投資目標，設定目標名稱；請輸入於下方空格內</p>
+                <input style="margin-left: 5.5em;" type="text" id="targetName" class="inputbox" placeholder="  請輸入目標名稱"
+                    required="required">
+            </div>
+
+            <div style="display: block; margin-left: 6.7em; margin-right: 6.2em; margin-top:1em; background-color: white;border:3px #CCCCCC solid;
+        border-radius: 0.5em;color: black;font-size: 15px; height: 20em;">
+                <img src="永續智能投資圖片/4_設定投資目標/4_2.png"
+                    style="float: left; width: 20%;margin-left: 3em; margin-top: 2em; margin-right: 2em;">
+                <p style="margin-left: 24em; margin-top: 2em; font-size: 15px;">請問您需要多少錢才能達成您的目標呢？請輸入於下方空格內</p>
+                <input style="margin-left: 3.5em;" type="text" id="targetMoney" class="inputbox"
+                    onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="  請輸入新台幣1,000～9,999,999元"
+                    required="required"> 元
+                <p style="margin-left: 24em; margin-top: 2em; font-size: 15px;">請問您預計花多久時間進行此項投資呢？請輸入於下方空格內</p>
+                <input style="margin-left: 3.5em;;" type="text" id="targetTime" class="inputbox"
+                    onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="  請輸入3~50年" required="required">
+                年<br>
+                <img style="margin-left: 2.5em; margin-top: 1em;" src="永續智能投資圖片/exclamation.png">
+                <p style="margin-left: 28.5em; margin-top: -1.6em; font-size: 10pt; color: gray;">
+                    小提醒<br>在智能投資裡，有65%享受自由人生的族群，目標時程設定在3至5年</p>
+            </div>
+
+            <div style="display: block; margin-left: 6.7em; margin-right: 6.2em; margin-top:1em; background-color: white;border:3px #CCCCCC solid;
+        border-radius: 0.5em;color: black;font-size: 15px; height: 24em;">
+                <img src="永續智能投資圖片/4_設定投資目標/4_3.png"
+                    style="float: left; width: 20%; margin: 1.5em;margin-top: 4em; margin-right: 4em;">
+                <p style="margin-left: 24em; margin-top: 2em; font-size: 15px;">請問您現在要投入多少資金在此項投資呢？請輸入於下方空格內</p>
+                <input style="margin-left: 3em;" type="text" id="investMoney" class="inputbox"
+                    onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="  請輸入新台幣1,000～9,999,999元"
+                    required="required"> 元<br>
+                <img style="margin-left: 2em; margin-top: 1em;" src="永續智能投資圖片/exclamation.png">
+                <p style="margin-left: 28.5em; margin-top: -1.6em; font-size: 10pt; color: gray;">
+                    小提醒<br>投資一定金額能讓資產配置更有效率。在智能投資裡，有46%享受自由人生的族群，每月投入在新台幣五千<br>至一萬元間</p>
+                <p style="margin-left: 24em; margin-top: 2em; font-size: 15px;">請問您較想使用單筆投資還是定期定額的方式進行投資呢？請點選下方選項</p>
+                <input value='單筆投資' type="radio" name="erarbeiten" required> 單筆投資 &emsp;
+                <input value='定期定額' type="radio" name="erarbeiten" required> 定期定額<br>
+                <img style="margin-left: 2em; margin-top: 1em;" src="永續智能投資圖片/exclamation.png">
+                <p style="margin-left: 28.5em; margin-top: -1.6em; font-size: 10pt; color: gray;">
+                    小提醒<br>
+                    單筆投資：一筆錢一次進行投資，相對低點進場會有較大獲利空間，但收益及風險相對較大<br>
+                    定期定額：每個月定時投入固定的金額，只要長期趨勢向上就有機會獲利，較不受市場波動影響，風險較低</p>
+
+            </div>
+
+            <br>
+
+            <input type="submit" class="btnClass btn_type1" value="下一步"
+                style="display:block; margin:auto; margin-top: 1em;" onclick="saveData()">
+
+            <br>
+
+        </form>
+
+    </div>
+
+
+    <script>
+        var btn = document.querySelector('.btnClass');
+
+        function saveData(e) {
+            //宣告一個變數，綁定輸入欄，讀取&紀錄使用者輸入的文字
+            var str = document.querySelector('#targetName').value;
+            var str2 = document.querySelector('#targetMoney').value;
+            var str3 = document.querySelector('#targetTime').value;
+            var str4 = document.querySelector('#investMoney').value;
+
+            localStorage.setItem('Name', str); //把輸入的內容存在瀏覽器 
+            localStorage.setItem('Money', str2);
+            localStorage.setItem('Time', str3);
+            localStorage.setItem('iMoney', str4);
+        }
+
+        //btn.addEventListener('click', saveData)
+    </script>
+
+    <script>
+        //call reload on page load
+        reload();
+
+        //add click functionality to radio buttons
+        Array.from(document.querySelectorAll('input[type="radio"]')).forEach(function (item, index) {
+            item.addEventListener('click', save);
+        });
+
+        //Save Values
+        function save() {
+            //Radiobuttons  
+            var g1 = document.querySelector('input[name=erarbeiten]:checked').value;
+            localStorage.setItem("g1", g1);
+        }
+        //Restoring saved Values
+        function reload() {
+            // Radiobuttons    
+            // get a list of DOM elements
+            var G1 = Array.from(document.getElementsByName('erarbeiten'));
+            var val1 = localStorage.getItem('g1');
+            for (var i = 0; i < G1.length; i++) {
+                if (G1[i].value == val1) {
+                    G1[i].checked = true;
+                }
+            }
+        }
+
+
+    </script>
+
+    <br>
+
+</body>
+
+</html>
