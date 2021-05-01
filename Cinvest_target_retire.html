@@ -76,7 +76,7 @@
                 <img src="永續智能投資圖片/4_設定投資目標/4_3.png" width=20% style="float:left; margin: 2em;" />
                 <br>
                 <p style="margin-top: 2em; font-size: 15px;">請問您現在要投入多少資金在此項投資呢？請輸入於下方空格內</p>
-                <input type="text" id="targetMoney" class="inputbox"
+                <input type="text" id="targetiMoney" class="inputbox"
                     onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="  請輸入新台幣1,000～9,999,999元"
                     required="required"> 元<br>
                 <img style="margin-top: 1em;" src="永續智能投資圖片/exclamation.png">
@@ -115,7 +115,7 @@
             var str = document.querySelector('#targetName').value;
             var str2 = document.querySelector('#targetMoney').value;
             var str3 = document.querySelector('#targetTime').value;
-            var str4 = document.querySelector('#investMoney').value;
+            var str4 = document.querySelector('#targetiMoney').value;
 
             localStorage.setItem('Name', str); //把輸入的內容存在瀏覽器 
             localStorage.setItem('Money', str2);
