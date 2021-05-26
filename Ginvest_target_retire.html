@@ -16,19 +16,19 @@
         <a href="#">信用卡</a>
         <a href="#">外幣/換匯</a>
         <a href="#">臺幣/轉帳</a>
-        <div onclick="location.href='index.html'" style="cursor: pointer;">
+        <div onclick="location.href='real_index.html'" style="cursor: pointer;">
             <h3>永續銀行</h3>
         </div>
     </div>
 
 
-    <div class="wrapper">
-        <div>
-            <h2 style="margin-left: 6em;margin-top: -1em;">永續智能投資</h2>
+    <div class="flexbar">
+        <div class="itembar">
+            <h2>永續智能投資</h2>
         </div>
-        <div></div>
-        <div></div>
-        <img src="永續智能投資圖片/流程（右上角）/流程透明度 中-2.png" width="150%" style="margin-right: 10em;margin-top: -1.5em;">
+        <div class="itembar flex-2bar" style="position:absolute; right:-2em; margin-top: 1.5em;">
+            <img src="永續智能投資圖片/流程（右上角）/流程透明度 中-2.png" style="display: block; max-width:500px; max-height:50px; width: auto; height: auto;">
+        </div>
     </div>
 
     <img src="永續智能投資圖片/robot_judy.png" style="float: left; z-index: -100; margin-top: 2em;" width="5%">
@@ -36,65 +36,76 @@
     <h1 style="text-align: center; color: #38566A; margin-bottom: 15px;">設定退休計畫</h1>
 
     <form action="Ginvest_solution.html" style="font-size:15px;">
-        <div style="display: block; margin-left: 6.7em; margin-right: 6.2em; margin-top:1em; background-color: white;border:3px #CCCCCC solid;
-        border-radius: 0.5em;color: black;height:auto;">
-            <div style="width:100%">
-                <img src="永續智能投資圖片/4_設定投資目標/4_1.png" width="20%" style="float:left; margin: 2em;">
-                <br><br><br><br>
-                <span>請針對退休計畫，設定計畫名稱；請輸入於下方空格內</span><br><br>
-                <input type="text" id="targetName" class="inputbox" placeholder="  請輸入計畫名稱" required="required">
-                <br><br><br><br>
+
+        <div class="flexbar3">
+            <div class="itembar3">
+                <img src="永續智能投資圖片/4_設定投資目標/4_1.png" style="object-fit: contain; max-width:100%; width: 100%; height: auto;">
+            </div>
+            <div class="itembar3 flex-2bar3" style="margin-left: 5em;">
+                <div style="width:100%">
+                    <br><br><br>
+                    <span>請針對投資目標，設定目標名稱；請輸入於下方空格內</span><br><br>
+                    <input type="text" id="targetName" class="inputbox" style="width: 35%;" placeholder="  請輸入目標名稱" required="required">
+                    <br><br><br><br>
+                </div>
             </div>
         </div>
 
-        <div style="display: block; margin-left: 6.7em; margin-right: 6.2em; margin-top:1em; background-color: white;border:3px #CCCCCC solid;
-        border-radius: 0.5em;color: black;font-size: 15px; height: auto;">
-            <div style="width:100%">
-                <img src="永續智能投資圖片/4_設定投資目標/4_2.png" width="20%" style="float:left; margin: 2em;" />
-                <br>
-                <p style="margin-top: 2em;">請問您需要多少錢才能達成您的計畫呢？請輸入於下方空格內</p>
-                <input type="text" id="targetMoney" class="inputbox"
-                    onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="  請輸入新台幣1,000～9,999,999元"
-                    required="required"> 元
-                <br>
-                <p style="margin-top: 2em;">請問您預計多久後退休呢？請輸入於下方空格內</p>
-                <input type="text" id="targetTime" class="inputbox" onkeyup="this.value=this.value.replace(/[^\d]/g,'')"
-                    placeholder="  請輸入3~50年" required="required">
-                年<br>
-                <img style="margin-top: 1em;" src="永續智能投資圖片/exclamation.png">
-                <p style="margin-top: -1.6em; margin-left: 22.5em; font-size: 10pt; color: gray;">
-                    小提醒<br>
-                    在智能投資裡，有65%享受自由人生的族群，目標時程設定在3至5年
-                </p>
-                <br>
+        <div class="flexbar3" style="margin-top: 2em;">
+            <div class="itembar3">
+                <img src="永續智能投資圖片/4_設定投資目標/4_2.png" style="object-fit: contain; max-width:100%; width: 100%; height: auto;">
+            </div>
+            <div class="itembar3 flex-2bar3" style="margin-left: 5em;">
+                <div style="width:100%">
+                    <br>
+                    <p style="margin-top: 1em;">請問您需要多少錢才能達成您的目標呢？請輸入於下方空格內</p>
+                    <input type="text" id="targetMoney" class="inputbox" style="width: 35%;"
+                        onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="  請輸入新台幣1,000～9,999,999元"
+                        required="required"> 元
+                    <br>
+                    <p style="margin-top: 2em;">請問您預計花多久時間進行此項投資呢？請輸入於下方空格內</p>
+                    <input type="text" id="targetTime" class="inputbox" style="width: 35%;"
+                        onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="  請輸入3~50年"
+                        required="required">
+                    年<br>
+                    <img style="margin-top: 1em;" src="永續智能投資圖片/exclamation.png">
+                    <p style="margin-top: -1.5em; margin-left: 2em; font-size: 10pt; color: gray;">
+                        小提醒<br>
+                        在智能投資裡，有65%享受自由人生的族群，目標時程設定在3至5年
+                    </p>
+                    <br>
+                </div>
             </div>
         </div>
 
-        <div style="display: block; margin-left: 6.7em; margin-right: 6.2em; margin-top:1em; background-color: white;border:3px #CCCCCC solid;
-        border-radius: 0.5em;color: black;height: auto;">
-            <div style="width:100%">
-                <img src="永續智能投資圖片/4_設定投資目標/4_3.png" width=20% style="float:left; margin: 2em;" />
-                <br>
-                <p style="margin-top: 2em; font-size: 15px;">請問您現在要投入多少資金在此項投資呢？請輸入於下方空格內</p>
-                <input type="text" id="targetiMoney" class="inputbox"
-                    onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="  請輸入新台幣1,000～9,999,999元"
-                    required="required"> 元<br>
-                <img style="margin-top: 1em;" src="永續智能投資圖片/exclamation.png">
-                <p style="margin-top: -1.6em; margin-left: 22.5em; font-size: 10pt; color: gray;">
-                    小提醒<br>
-                    投資一定金額能讓資產配置更有效率。在智能投資裡，有46%享受自由人生的族群，每月投入在新台幣五千
-                    至一萬元間</p>
+        <div class="flexbar3" style="margin-top: 2em;">
+            <div class="itembar3">
+                <img src="永續智能投資圖片/4_設定投資目標/4_3.png" style="object-fit: contain; max-width:100%; width: 100%; height: auto;">
+            </div>
+            <div class="itembar3 flex-2bar3" style="margin-left: 5em;">
+                <div style="width: 100%;">
+                    <br>
+                    <p style="margin-top: 1em; font-size: 15px;">請問您現在要投入多少資金在此項投資呢？請輸入於下方空格內</p>
+                    <input type="text" id="targetiMoney" class="inputbox" style="width: 35%;"
+                        onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="  請輸入新台幣1,000～9,999,999元"
+                        required="required"> 元<br>
+                    <img style="margin-top: 1em;" src="永續智能投資圖片/exclamation.png">
+                    <p style="margin-top: -1.5em;margin-left: 2em; font-size: 10pt; color: gray;">
+                        小提醒<br>
+                        投資一定金額能讓資產配置更有效率。在智能投資裡，有46%享受自由人生的族群，每月投入在新台幣五千
+                        至一萬元間</p>
 
-                <p style="font-size: 15px; margin-top: 2em;">請問您較想使用單筆投資還是定期定額的方式進行投資呢？請點選下方選項</p>
-                <input value='單筆投資' type="radio" name="erarbeiten" required> 單筆投資 &emsp;
-                <input value='定期定額' type="radio" name="erarbeiten" required> 定期定額<br>
-                <img style="margin-top: 1em;" src="永續智能投資圖片/exclamation.png">
-                <p style="margin-top: -1.6em; margin-left: 22.5em; font-size: 10pt; color: gray;">
-                    小提醒<br>
-                    單筆投資：一筆錢一次進行投資，相對低點進場會有較大獲利空間，但收益及風險相對較大<br>
-                    定期定額：每個月定時投入固定的金額，只要長期趨勢向上就有機會獲利，較不受市場波動影響，風險較低
-                </p>
-                <br>
+                    <p style="font-size: 15px; margin-top: 2em;">請問您較想使用單筆投資還是定期定額的方式進行投資呢？請點選下方選項</p>
+                    <input value='單筆投資' type="radio" name="erarbeiten" required> 單筆投資 &emsp;
+                    <input value='定期定額' type="radio" name="erarbeiten" required> 定期定額<br>
+                    <img style="margin-top: 1em;" src="永續智能投資圖片/exclamation.png">
+                    <p style="margin-top: -1.5em; margin-left: 2em; font-size: 10pt; color: gray;">
+                        小提醒<br>
+                        單筆投資：一筆錢一次進行投資，相對低點進場會有較大獲利空間，但收益及風險相對較大<br>
+                        定期定額：每個月定時投入固定的金額，只要長期趨勢向上就有機會獲利，較不受市場波動影響，風險較低
+                    </p>
+                    <br>
+                </div>
             </div>
         </div>
 
