@@ -288,7 +288,7 @@
         document.getElementById("demo2").addEventListener("click", function () {
             swal({
                 title: "申購前提醒",
-                text: "是否繼續申購?",
+                text: "是否確認進行申購？",
                 type: "success",
             }).then(function () {
                 window.location = "invest_confirm_finish.html";
@@ -300,8 +300,8 @@
         function confirm() {
             Swal.fire({
                 title: "申購前提醒",
-                text: "是否繼續申購?",
-                confirmButtonText: '繼續',
+                text: "是否確認進行申購？",
+                confirmButtonText: '確認',
                 confirmButtonColor: "#C5B9AC",
                 cancelButtonText: '上一步',
                 cancelButtonColor: "#C5B9AC",
